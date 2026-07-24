@@ -1,8 +1,25 @@
 aid: clairity
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clairity.png
 name: Clairity
-description: 'Clairity is a company surfaced as a portfolio company of initialized-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: climate. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Clairity Technology Inc. is a Los Angeles based climate-tech company building gigaton-scale
+  carbon dioxide removal using Direct Air Capture (DAC) paired with ex-situ mineralization. Their approach
+  removes CO2 from the atmosphere with readily available, inexpensive chemicals and standard construction
+  materials to produce concentrated CO2 streams for permanent removal and storage. Clairity operates
+  Project Juniper, a live carbon-removal facility in Southern Nevada, and raised a $6.75M seed round in
+  2024. As a hardware and carbon-removal operator the company publishes no public developer API, SDKs, or
+  documentation surface at this time; this profile captures its public identity and domain-security
+  posture in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/clairity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Climate
+- Carbon Removal
+- Direct Air Capture
+- Climate Tech
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/clairity-domain-security.yml
 - type: Website
   url: https://clairitytech.com/
+- type: About
+  url: https://www.clairitytech.com/about
+- type: Careers
+  url: https://www.clairitytech.com/careers
+- type: Blog
+  url: https://www.clairitytech.com/news
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
